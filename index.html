@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Portfolio</title>
-  <meta name="Descrição" content="Portfolio de Desenvolvedor" />
+  <meta name="description" content="Portfolio de Desenvolvedor" />
 
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" type="imagex/png" href="./assets/png/foto-perfil.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -93,6 +94,9 @@
     <div class="home-hero__cta">
       <a href="#projects" class="btn btn--bg">Projetos</a>
     </div>
+    <div class="home-hero__cta">
+      <a href="./assets/pdf/joao-pedro-della-rocca-curriculo.pdf" download="joao-pedro-della-rocca-cv" class="btn btn--bg">Baixar CV</a>
+    </div>
   </div>
   <div class="home-hero__socials">
     <div class="home-hero__social">
@@ -118,6 +122,13 @@
         <img
                 src="./assets/png/reactiveresume-ico.png"
                 alt="reactive resume icon"
+                class="home-hero__social-icon"
+        />
+      </a>
+      <a target="_blank" href="./assets/pdf/joao-pedro-della-rocca-curriculo.pdf" download="joão-pedro-della-rocca-cv" class="home-hero__social-icon-link">
+        <img
+                src="./assets/png/resume-ico.png"
+                alt="resume icon"
                 class="home-hero__social-icon"
         />
       </a>
@@ -213,49 +224,64 @@
       <div class="projects__row">
         <div class="projects__row-img-cont">
           <img
-                  src="./assets/jpeg/project-mockup-example.jpeg"
+                  src="./assets/jpeg/mockup-laptop-and-phone.jpg"
                   alt="Software Screenshot"
                   class="projects__row-img"
                   loading="lazy"
           />
         </div>
         <div class="projects__row-content">
-          <h3 class="projects__row-content-title">Project 2</h3>
+          <h3 class="projects__row-content-title">Selfcare - landing page</h3>
           <p class="projects__row-content-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-            facilis tempora, explicabo quae quod deserunt eius sapiente
-            praesentium.
+            Página de uma loja fictícia de produtos para saúde. O projeto foi criado com intuito de aprimorar os conhecimentos em front-end, design responsivo e uso de frameworks CSS e JavaScript.
           </p>
-          <a
-                  href="./project-2.html"
-                  class="btn btn--med btn--theme dynamicBgClr"
-                  target="_blank"
-          >Saiba mais</a
-          >
+          <p class="projects__row-content-desc">
+            HTML, CSS, TailWindCSS, ReactJS, Responsividade, Mobile First
+          </p>
+          <div class="project-details__links">
+            <a
+                    href="https://selfcare-website.netlify.app/"
+                    class="btn btn--med btn--theme project-details__links-btn"
+                    target="_blank"
+            >Live Link</a
+            >
+            <a
+                    href="https://github.com/DellaRoccaIFB/selfcare-website"
+                    class="btn btn--med btn--theme-inv project-details__links-btn"
+                    target="_blank"
+            >Code Link</a
+            >
+          </div>
         </div>
       </div>
       <div class="projects__row">
         <div class="projects__row-img-cont">
           <img
-                  src="./assets/jpeg/project-mockup-example.jpeg"
+                  src="./assets/jpeg/star-wars-project-mockup.jpg"
                   alt="Software Screenshot"
                   class="projects__row-img"
                   loading="lazy"
           />
         </div>
         <div class="projects__row-content">
-          <h3 class="projects__row-content-title">Project 3</h3>
+          <h3 class="projects__row-content-title">Star Wars - landing page</h3>
           <p class="projects__row-content-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-            facilis tempora, explicabo quae quod deserunt eius sapiente
-            praesentium.
+            Projeto final do curso front-end Vai Na Web para avaliação do uso de HTML, CSS, semântica e design responsivo.
           </p>
-          <a
-                  href="./project-3.html"
-                  class="btn btn--med btn--theme dynamicBgClr"
-                  target="_blank"
-          >Saiba mais</a
-          >
+          <div class="project-details__links">
+            <a
+                    href="https://starwars-landingpage.netlify.app/"
+                    class="btn btn--med btn--theme project-details__links-btn"
+                    target="_blank"
+            >Live Link</a
+            >
+            <a
+                    href="https://github.com/DellaRoccaIFB/Star-Wars-Landing-Page"
+                    class="btn btn--med btn--theme-inv project-details__links-btn"
+                    target="_blank"
+            >Code Link</a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -263,6 +289,7 @@
 </section>
 <section id="contact" class="contact sec-pad dynamicBg">
   <div class="main-container">
+
     <h2 class="heading heading-sec heading-sec__mb-med">
       <span class="heading-sec__main heading-sec__main--lt">Contato</span>
       <span class="heading-sec__sub heading-sec__sub--lt">
@@ -308,8 +335,12 @@
         <button type="submit" class="btn btn--theme contact__btn">
           Enviar
         </button>
+
       </form>
     </div>
+  </div>
+  <div class="home-hero__cta">
+    <a href="./assets/pdf/joao-pedro-della-rocca-curriculo.pdf" download="joao-pedro-della-rocca-cv" class="btn btn--bg">Baixar CV</a>
   </div>
 </section>
 <footer class="main-footer">
@@ -339,6 +370,13 @@
                     class="main-footer__icon"
                     src="./assets/png/reactiveresume-ico.png"
                     alt="reactive resume icon"
+            />
+          </a>
+          <a target="_blank" rel="noreferrer" download="joao-pedro-della-rocca-cv" href="./assets/pdf/joao-pedro-della-rocca-curriculo.pdf">
+            <img
+                    class="main-footer__icon"
+                    src="./assets/png/resume-ico.png"
+                    alt="resume icon"
             />
           </a>
         </div>
